@@ -6,7 +6,7 @@ interface Message {
   isGpt: boolean;
 }
 
-export const OrthographyPage = () => {
+export const ChatTemplate = () => {
 
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -30,7 +30,7 @@ export const OrthographyPage = () => {
 
 
           { /* Bienvenida */ }
-          <GptMessage text="Hola, soy ReactGPT, tu asistente de ortografía. ¿En qué puedo ayudarte?" />
+          <GptMessage text="Hola, soy ReactGPT, tu asistente. ¿En qué puedo ayudarte?" />
 
           {
             messages.map( (message, index) => (
